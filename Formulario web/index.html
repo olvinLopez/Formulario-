@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Registro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>FORMULARIO</h1>
+        
+        <form id="Formulario">
+            <div class="form-group">
+                <div class="campo-container">
+                    <label for="nombre">Ingrese sus Nombres:</label>
+                    <input type="text" id="nombre" name="nombre" class="campo" placeholder="Ej. Juan Jose">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="campo-container">
+                    <label for="apellidos">Apellidos</label>
+                    <input type="text" id="apellidos" name="apellidos" class="campo" placeholder="Ej. Idalgo Pérez">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="campo-container">
+                    <label for="cedula">Cédula</label>
+                    <input type="text" id="cedula" name="cedula" class="campo" placeholder="Ej. 1234567890" maxlength="11">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="campo-container">
+                    <label for="telefono">Teléfono</label>
+                    <input type="tel" id="telefono" name="telefono" class="campo" placeholder="1234567890" maxlength="10">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="campo-container">
+                    <label for="fecha">Fecha de nacimiento</label>
+                    <input type="date" id="fecha" name="fecha" class="campo">
+                </div>
+            </div>
+
+            <div class="form-group select-wrapper">
+                <div class="campo-container">
+                    <label for="pais">País de origen</label>
+                    <select id="pais" name="pais" class="campo">
+                        <option value="">Cargando países...</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group select-wrapper">
+                <div class="campo-container">
+                    <label for="genero">Género</label>
+                    <select id="genero" name="genero" class="campo">
+                        <option value="">Seleccione</option>
+                        <option value="masculino">Masculino</option>
+                        <option value="femenino">Femenino</option>
+                        <option value="otro">Otro</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <div class="campo-container">
+                    <label for="correo">Correo</label>
+                    <input type="email" id="correo" name="correo" class="campo" placeholder="ejemplo@correo.com">
+                </div>
+            </div>
+
+            <button type="submit" class="submit-btn boton" disabled>Registrarse</button>
+            
+            <p class="security-text">¡Tus datos están seguros con nosotros!</p>
+        </form>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
